@@ -1,0 +1,45 @@
+.my-links {
+  $base-spacing: 1.5em !default;
+  $action-color: #477DCA !default;
+  $medium-screen: em(640) !default;
+  $large-screen: em(860) !default;
+  $social-color: white;
+  $social-link-color: transparentize($social-color, 0.6);
+
+  padding: $base-spacing;
+  width: 100%;
+  display: inline-block;
+
+  ul {
+    line-height: 1.5em;
+    margin: 0 0 1em 0;
+    padding: 0;
+    
+    @include media($large-screen) {
+      float: left;
+      line-height: 1.8em;
+      margin-left: 1em;
+      margin-bottom: 0;
+    }
+  }
+
+  ul li {
+    list-style: none;
+    padding-right: 1em;
+
+    @include media($large-screen) {
+      display: inline;
+      text-align: left;
+    }
+  }
+
+  ul li a {
+    color: $social-link-color;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      color: transparentize($social-color, 0);
+    }
+  }
+}

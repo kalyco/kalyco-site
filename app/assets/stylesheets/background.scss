@@ -1,0 +1,11 @@
+$color: #27004C;
+$sprites: url("mega_sprite.svg");
+
+.background {
+  background-color: $color;
+  background-image: $sprites;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75% 75%;
+  padding:40px;
+}
