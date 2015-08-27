@@ -1,12 +1,13 @@
 $color: #3D007A;
 $sprites: url("mega_sprite.svg");
 
-$nexa-font: "Nexa Light", sans-serif;
+$arkhip: "Arkhip", sans-serif;
 
- @font-face {
-   font-family: "Nexa Light";
-   src: font-url('nexa_light.otf');
+@font-face {
+font-family: "Arkhip";
+src: font-url('Arkhip_font.ttf');
 }
+
 
 .background {
   background-color: $color;
@@ -21,14 +22,11 @@ $nexa-font: "Nexa Light", sans-serif;
 .kalyco {
   inherit: background;
   color: black;
-  font-family: $nexa-font;
-  font-size: 40px;
+  font-family: $arkhip;
+  font-size: 50px;
   text-align: center;
 }
 
-.first-links {
-  position: relative;
-}
 
 img.octocat {
   -webkit-filter: invert(100%);
@@ -38,11 +36,11 @@ img.octocat {
 
 ul.first-links {
   position: relative;
-  bottom: 150px;
+  bottom: 175px;
 }
 
 ul.last-links {
   position: absolute;
-  top: 40%;
-  left: 90%;
+  top: 350px;
+  left: 1240px;
 }
