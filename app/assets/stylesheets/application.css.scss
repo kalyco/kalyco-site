@@ -8,3 +8,10 @@
 @import "refills/accordian";
 @import "background";
 
+@font-face {
+  font-family: 'Nexa';    
+  src: asset-url('nexa_bold.otf');
+  src: asset-url('nexa_light.otf');
+  font-weight: normal;
+  font-style: normal;
+}
