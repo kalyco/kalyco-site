@@ -2,8 +2,9 @@
   $base-border-color: gainsboro !default;
   $base-background-color: white !default;
   $base-spacing: 1.5em !default;
-  $action-color: #477DCA !default;
-  $dark-gray: #333 !default;
+  $action-color: black;
+  $dark-purple: #290052;
+  $light-grey: #666699;
   $medium-screen: em(640) !default;
   $tab-link-color: $dark-gray;
   $tab-border: 1px solid $base-border-color;
@@ -11,6 +12,24 @@
   $tab-inactive-color: $base-background-color;
   $tab-inactive-hover-color: silver;
   $tab-mode: $medium-screen;
+
+  $nexa-font: "Nexa Light", sans-serif;
+  $nexa-bold: "Nexa Bold", sans-serif;
+
+   @font-face {
+     font-family: "Nexa Light";
+     src: font-url('nexa_light.otf');
+  }
+
+  @font-face {
+     font-family: "Nexa Bold";
+     src: font-url('nexa_bold.otf');
+  }
+
+ font-family: $nexa-font;
+ color: white;
+ background: $light-grey;
+
 
   @include clearfix;
   line-height: 1.5;
@@ -25,9 +44,9 @@
   }
 
   a.tab-link {
-    background-color: $tab-inactive-color;
+    background-color: $dark-purple;
     border-top: $tab-border;
-    color: $tab-link-color;
+    color: white;
     display: block;
     padding: ($base-spacing / 2) $gutter;
     text-decoration: none;
@@ -47,6 +66,7 @@
 
     &.is-active {
       border-bottom: 0;
+      background: $light-grey;
 
       @include media($tab-mode) {
         border: $tab-border;

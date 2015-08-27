@@ -1,6 +1,12 @@
-$color: #27004C;
+$color: #3D007A;
 $sprites: url("mega_sprite.svg");
-$nexa-font: "Nexa Bold", sans-serif;
+
+$nexa-font: "Nexa Light", sans-serif;
+
+ @font-face {
+   font-family: "Nexa Light";
+   src: font-url('nexa_light.otf');
+}
 
 .background {
   background-color: $color;
@@ -9,6 +15,7 @@ $nexa-font: "Nexa Bold", sans-serif;
   background-position: center;
   background-size: 100% 100%;
   padding: 40px;
+  background-height: 600px;
 }
 
 .kalyco {
@@ -21,4 +28,21 @@ $nexa-font: "Nexa Bold", sans-serif;
 
 .first-links {
   position: relative;
+}
+
+img.octocat {
+  -webkit-filter: invert(100%);
+  width: 77px;
+  height: 77px;
+}
+
+ul.first-links {
+  position: relative;
+  bottom: 150px;
+}
+
+ul.last-links {
+  position: absolute;
+  top: 40%;
+  left: 90%;
 }
