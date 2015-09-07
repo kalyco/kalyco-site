@@ -10,21 +10,27 @@ src: font-url('Arkhip_font.ttf');
 
 
 .background {
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
   background-color: $color;
   background-image: $sprites;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
   padding: 40px;
-  background-height: 600px;
+  height: 900px;
+
 }
 
 .kalyco {
-  inherit: background;
+  border: 10px solid black;
   color: black;
+  margin: auto;
   font-family: $arkhip;
-  font-size: 50px;
-  text-align: center;
+  font-size: 75px;
+  position: relative;
+  top: 200px;
 }
 
 
@@ -35,12 +41,40 @@ img.octocat {
 }
 
 ul.first-links {
+  size: 200%;
   position: relative;
   bottom: 175px;
 }
 
 ul.last-links {
   position: absolute;
-  top: 350px;
-  left: 1240px;
+  top: 600px;
+  left: 1900px;
 }
+
+ul {
+  size: 150% 150%;
+}
+
+.triangle-right {
+  width: 0; 
+  height: 0; 
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+  
+  border-left: 60px solid black;
+}
+
+.pacman {
+  width: 0px;
+  height: 0px;
+  border-right: 60px solid transparent;
+  border-top: 60px solid black;
+  border-left: 60px solid black;
+  border-bottom: 60px solid black;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+
